@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<title>Maps</title>
+	</head>
+	<body>
+		<div id="maps"></div>
+
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbG5e2NH-wNkCOEZSKVBX-E53Hco8ffwc&callback=initMap"></script>
+	<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
+<!-- El parámetro callback ejecuta la función initMap cuando la API se carga por completo. 
+El atributo async permite al navegador seguir procesando el resto de la página mientras se carga la API.  -->
+<!-- Cómo cargar la API de manera sincrónica
+
+En la etiqueta script que carga la Maps JavaScript API, es posible omitir el atributo async y el parámetro callback. Esto hará que se bloquee la carga de la API hasta que se complete la descarga.
+
+Probablemente se demore la carga de tu página. Sin embargo, implica que puedes escribir etiquetas de script posteriormente suponiendo que la API ya está cargada. -->
